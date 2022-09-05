@@ -1,18 +1,31 @@
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #grid {
+    height: 100vh;
     display: grid;
     grid-template-columns: 40% 60%;
+}
+input {
+    margin: 20%;
 }
 
 #color {
     display: flex;
     flex-direction: column;
+    border-left: 1px solid #000;
+}
+
+#color h2 {
+    margin-left: 5%;
 }
 
 #output {
-    margin-top: 4vw;
-    height: 30vw;
+    background-color: rgb(0, 0, 0);
+    border-top: 1px solid #000;
+    margin-top: 4vh;
+    height: 100%;
 }
