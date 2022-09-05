@@ -1,4 +1,18 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 #grid {
     display: grid;
     grid-template-columns: 40% 60%;
+}
+
+#color {
+    display: flex;
+    flex-direction: column;
+}
+
+#output {
+    margin-top: 4vw;
+    height: 30vw;
 }

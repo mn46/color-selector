@@ -20,7 +20,7 @@ function getRgb(color) {
   let r = parseInt(color.substring(1, 3), 16);
   let g = parseInt(color.substring(3, 5), 16);
   let b = parseInt(color.substring(5, color.length), 16);
-  rgb = `${r}, ${g}, ${b}`;
+  rgb = `R: ${r}, G: ${g}, B: ${b}`;
   getHsl(r, g, b);
 }
 
@@ -68,7 +68,7 @@ function getHsl(r, g, b) {
 function updateOutput() {
   document.querySelector("#output").style.backgroundColor = color;
   document.querySelector("#hex").textContent = `HEX: ${color}`;
-  document.querySelector("#rgb").textContent = `HEX: ${rgb}`;
+  document.querySelector("#rgb").textContent = `RGB: ${rgb}`;
   document.querySelector("#hsl").textContent = `HSL: ${hsl}`;
 
   start();
