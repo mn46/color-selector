@@ -59,7 +59,7 @@ function getHsl(r, g, b) {
   s *= 100;
   l *= 100;
 
-  hsl = `${h}, ${s}%, ${l}%`;
+  hsl = `${Math.round(h)}, ${Math.round(s)}%, ${Math.round(l)}%`;
 
   console.log("hsl(%f,%f%,%f%)", h, s, l); // just for testing
   updateOutput();
